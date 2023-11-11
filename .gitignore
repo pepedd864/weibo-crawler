@@ -1,0 +1,6 @@
+venv
+.idea
+cookie
+*.log
+*.csv
+*.pyc
