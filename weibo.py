@@ -1,8 +1,6 @@
 import re
 import random
 
-import keyboard
-
 from color_log import setup_logger
 from time import sleep
 
@@ -271,8 +269,4 @@ def schedule_tasks(keywords, interval=3600):
         logger.info("等待{}秒，请及时更新cookie，防止无法获取评论".format(interval))
         show_countdown(interval)
         round += 1
-        if keyboard.is_pressed('q'):
-            break
 
-
-keyboard.add_hotkey('q', lambda: None)
